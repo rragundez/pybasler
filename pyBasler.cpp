@@ -49,7 +49,7 @@ string capture()
     }
 }
 
-BOOST_PYTHON_MODULE(basler_camera)
+BOOST_PYTHON_MODULE(pyBasler)
 {
     using namespace boost::python;
     def("capture", capture);

@@ -2,9 +2,9 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-import basler_camera as bc
+import pyBasler
 
-frame_bytes = bc.capture()
+frame_bytes = pyBasler.capture()
 frame_array = np.fromstring(frame_bytes, dtype=np.uint8)
 
 try:
